@@ -1,0 +1,523 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#F2E1C4), to(white));
+  background-image: linear-gradient(#F2E1C4, white);
+  font-family: 'Montserrat', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+footer {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), to(#844E5F));
+  background-image: linear-gradient(white, #844E5F);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  gap: 2rem;
+  font-size: 1rem;
+}
+
+body {
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+/*Index*/
+/*Posicion navbar */
+#header {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#titulo {
+  color: #9E5D72;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+.navbar li {
+  color: #844E5F;
+  display: inline-block;
+  margin: 0 1.5rem;
+  position: relative;
+  font-size: 2.5rem;
+}
+
+.navbar-toggler-icon {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  margin: 0.1rem;
+}
+
+.menuNav {
+  color: black;
+  font-weight: bold;
+}
+
+.navbar li:last-child {
+  margin-right: 0%;
+}
+
+.navegacion {
+  width: 100%;
+  text-decoration: none;
+}
+
+.navegacion li {
+  font-size: 3rem;
+}
+
+h1 {
+  color: #F2E1C4;
+  font-size: 2.5rem;
+}
+
+p {
+  color: black;
+  font-size: 1.5rem;
+}
+
+h2 {
+  color: #A5476D;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.textoIzq {
+  text-align: left;
+}
+
+.textoDerecha {
+  text-align: right;
+  -webkit-box-align: right;
+      -ms-flex-align: right;
+          align-items: right;
+}
+
+/*Texto de bienvenida*/
+.bienvenidos {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+.bienvenidos_titulo {
+  color: #844E5F;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.bienvenidos_texto {
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  color: #A5476D;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/*Formatos paginas*/
+.tituloPaginas {
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  color: #A5476D;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/*formatofotosindex*/
+.figure {
+  margin: 1rem;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30rem;
+  height: 35rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.figure_fotovino {
+  width: 30rem;
+  height: 20rem;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.figure_fotovino:hover {
+  width: 35rem;
+  height: 25rem;
+}
+
+.figure_fotocaja {
+  width: 30rem;
+  height: 35rem;
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+
+.figure_fotocaja:hover {
+  width: 33rem;
+  height: 38rem;
+}
+
+.figure_img {
+  width: 100%;
+  height: 100%;
+}
+
+.figure_texto {
+  color: #A5476D;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.figureRegalos {
+  width: 30rem;
+  height: 46rem;
+}
+
+/*sectionFotosIndex*/
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sectionProductos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*formatolistasproducto*/
+.figureListas {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem;
+  padding: 3rem;
+}
+
+.footer {
+  font-size: 2rem;
+  width: 100%;
+  height: 100%;
+}
+
+.footer_novedades {
+  color: #844E5F;
+  padding-top: 1rem;
+}
+
+.footer_redes {
+  margin-top: 1.5rem;
+  color: white;
+  font-style: italic;
+  font-weight: lighter;
+  margin-bottom: 1rem;
+}
+
+/*submenu*/
+.submenu {
+  position: absolute;
+  display: none;
+}
+
+.submenu li {
+  display: block;
+  background-color: #F2E1C4;
+  width: 15rem;
+  text-align: center;
+}
+
+.navbar li:hover .submenu {
+  display: block;
+}
+
+.historia {
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.historia_texto {
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  font-style: italic;
+  margin-right: 15rem;
+  margin-left: 15rem;
+  margin-top: 23rem;
+  margin-bottom: 25rem;
+  padding: 0.3rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 100%;
+  height: 100%;
+}
+
+.imagenHistoria {
+  margin-left: 5rem;
+  margin-top: 2.5rem;
+}
+
+.fotosregalos {
+  margin-top: 5rem;
+}
+
+.formulario {
+  font-size: 1.7rem;
+  width: 100%;
+  height: 100%;
+}
+
+.fotocontacto {
+  width: 31rem;
+  height: 18rem;
+}
+
+/*menu hamburguesa bootstrap*/
+#menuHamburguesa {
+  background-color: transparent !important;
+}
+
+/*fotmato titulos paginas*/
+#titulosPages {
+  margin: 5rem;
+}
+
+/* Estructura GRID */
+/*.contenedor {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 1fr 3.1fr 0.5fr;
+    grid-template-areas: 
+    "navegacion navegacion"
+    "main main"
+    "footer footer";
+}
+
+
+header {grid-area: navegacion;}
+
+main {grid-area: main;}
+
+footer {grid-area: footer;} */
+@media only screen and (max-width: 1200px) {
+  /*.contenedor {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-template-rows: 0.5fr 3fr 0.5fr;
+        grid-template-areas: 
+        "navegacion navegacion"
+        "main main"
+        "footer footer";
+        }
+        */
+  .navegacion li {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /*.contenedor {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        grid-template-rows: 0.5fr 2fr 0.5fr;
+        grid-template-areas: 
+        "navegacion navegacion"
+        "main main"
+        "footer footer";
+    } */
+  .navegacion li {
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  /*.contenedor {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 2.3fr 5fr 1.7fr;
+    grid-template-areas: 
+    "navegacion"
+    "main"
+    "footer";
+    }
+    */
+  .navegacion li {
+    font-size: 2rem;
+  }
+  .navbar li {
+    display: block;
+  }
+  .section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .historia {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .figure_img {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .imagenHistoria {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  /*.contenedor {
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: 2.3fr 5fr 1.7fr;
+    grid-template-areas: 
+    "navegacion"
+    "main"
+    "footer";
+    }
+    */
+  .navegacion li {
+    font-size: 2rem;
+  }
+  .navbar li {
+    display: block;
+  }
+  .section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .historia {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .imagenHistoria {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

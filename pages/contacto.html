@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactate con nosotros para resolver tus inquietudes">
+    <meta name="keywords" content="Vinos, Bodegas exclusivas, Vinos argentinos, tinto, blanco, malbec, zona norte">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <!--link CSS Bootstrap-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!--link CSS Propio-->
+    <link rel="stylesheet" href="../scss/styles.css">
+    <title>Contacto -Pulcuwines</title>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="container-fluid">
+            <div class="row">
+                <nav class="navbar navbar-expand-md navbar-light p-auto col-12">
+                    <div class="container-fluid" id="header">
+                        <a class="navbar-brand" href="../index.html"><img src="../imagenes/logo png pulcu.png" alt="Logo" width="120px" height="120px"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 menu2" id="menuNav">
+                                <li>
+                                    <a href="../index.html" class="nav-link" aria-current="page">Inicio</a>
+                                </li>
+                                <li>
+                                    <a href="productos.html" class="nav-link">Productos</a>
+                                    <ul class="submenu">
+                                        <li><a href="productos.html">Vino Blanco</a></li>
+                                        <li><a href="productos.html">Vino Tinto</a></li>
+                                    </ul>
+                                </li>
+                                    <li>
+                                        <a href="regalos.html" class="nav-link">Regalos</a>
+                                    </li>
+                                    <li>
+                                        <a href="quienessomos.html" class="nav-link">Quienes somos</a>
+                                    </li>
+                                    <li>
+                                        <a href="contacto.html" class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contacto</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <h1 class="tituloPaginas" id="titulosPages">Contactanos</h1>
+                <section>
+                    <figure>
+                    <img src="../imagenes/contactanos.png" alt="contactanos" class="figure_img fotocontacto">
+                    </figure>
+                    <form action="" method="GET" enctype="text/plain" class="formulario">
+                        <label for="nombre"></label>
+                        <input type="text" name="nombre"  placeholder="Nombre"  required>
+                        <br>
+                        <br>
+                        <label for="apellidos"></label>
+                        <input type="text" name="apellidos" placeholder="Apellido" required>
+                        <br>
+                        <br>
+                        <label for="email"></label>
+                        <input type="email" name="email" placeholder="E-mail" required>
+                        <br>
+                        <br>
+                        <label for="Terminosycondiciones">Acepto terminos y condiciones</label>  
+                        <input type="checkbox" value="acepto" name="Terminosycondiciones">       
+                        <br>   
+                        <br> 
+                        <textarea name="comentarios" cols="35" rows="15">Comentarios</textarea>
+                        <br>
+                        <br>
+                        <button type="button submit" class="btn btn-outline-dark">Enviar</button>
+                        <button type="button reset" class="btn btn-outline-dark">Limpiar</button>
+                    </form>
+                </section>
+        </main>
+        <footer class="footer"> 
+            <p class="footer_novedades">Recibí todas nuestras promociones</p>
+            <form action="#" method="POST">
+                <input type="email" placeholder="Ingresá tu email" required>
+                <button type="button submit" class="btn btn-light">Suscribite</button>
+            </form>
+            <p class="footer_redes">Seguinos en nuestras redes</p>
+            <img src="../imagenes/Facebook.png" width="50px" height="40px" />
+            <img src="../imagenes/ig.png" width="50px" height="40px"/>
+            <img src="../imagenes/wsp.png" width="50px" height="40px"/>
+        </footer>
+    </div>
+    <script src="../js/bootstrap.min.js"></script>
+</body>
+</html>
