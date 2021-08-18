@@ -55,54 +55,52 @@
         <main>
             <section>
                 <h1 class="tituloPaginas"id="titulosPages">PulcúBox</h1>
-                <figure>
-                <img src="../imagenes/box.jpg" alt="pulcubox" class="figureRegalos">
-                </figure>
-                <figure>
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Pulcubox Dulce
-                    </button>
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="divRegalos">
+                    <figure class="figureRegalos">
+                        <img src="../imagenes/box.jpg" alt="pulcubox" class="imagenRegalos">
+                        <button type="button" class="btn btn-dark  textoBotonRegalos" data-bs-toggle="modal" data-bs-target="#dulce">
+                        Pulcubox Dulce
+                        </button>
+                        <div class="modal fade" id="dulce" tabindex="-1" aria-labelledby="ModalLabelDulce" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Pulcubox Dulce</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <h5 class="modal-title" id="exampleModalLabel">Pulcubox Dulce</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
+                                    <div class="modal-body">
+                                        <p>Vino a elección + Marroc</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                    <figure class="figureRegalos">
+                        <img src="../imagenes/pulcubox2.jpeg" alt="pulcubox" class="imagenRegalos">
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#salada">
+                            Pulcubox Salada
+                        </button>
+                        <div class="modal fade" id="salada" tabindex="-1" aria-labelledby="ModalLabelSalada" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Pulcubox Salada</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
                                 <div class="modal-body">
-                                <p>Vino a elección + Marroc</p>
+                                <p>2 Vinos + Mini Picada</p>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </figure>
-                <figure>
-                    <img src="../imagenes/pulcubox2.jpeg" alt="pulcubox" class="figureRegalos">
-                </figure>
-                <figure>
-                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Pulcubox Salada
-                    </button>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Pulcubox Salada</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                            <p>2 Vinos + Mini Picada</p>
-                            </div>
-                            <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             </div>
                         </div>
-                        </div>
-                    </div>
-                </figure>
+                    </figure>
+                </div>
             </section>
         </main>
         <footer class="footer"> 

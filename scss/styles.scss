@@ -15,12 +15,9 @@ $ancho: 30rem;
 header {
     background-image: linear-gradient($coloramarillo, $colorblanco);
     font-family: 'Montserrat', sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
     font-weight: bold;
     color: $colornegro;
-    text-align: center;
+    width: 100%;
 }
 
 footer {
@@ -41,6 +38,8 @@ body {
 /*Index*/
 /*Posicion navbar */
 #header {
+    display: flex;
+    flex-flow: row nowrap;
     justify-content: space-between;
 }
 
@@ -194,9 +193,27 @@ h2 {
 }
 
 .figureRegalos {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.btn {
+    font-size: 1.5rem;
+}
+
+.divRegalos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagenRegalos {
     width: 30rem; 
     height: 46rem;
 }
+
+
 
 /*sectionFotosIndex*/
 
@@ -313,6 +330,7 @@ height: 100%;
     margin: 5rem;
 }
 
+
 /* Estructura GRID */
     /*.contenedor {
     display: grid;
@@ -361,6 +379,10 @@ footer {grid-area: footer;} */
     .navegacion li {
         font-size: 1.7rem;
     }
+}
+
+@media only screen and (max-width: 758px) {
+
 }
 
 @media only screen and (max-width: 320px){

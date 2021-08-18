@@ -10,18 +10,9 @@ header {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#F2E1C4), to(white));
   background-image: linear-gradient(#F2E1C4, white);
   font-family: 'Montserrat', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
   font-weight: bold;
   color: black;
-  text-align: center;
+  width: 100%;
 }
 
 footer {
@@ -42,6 +33,13 @@ body {
 /*Index*/
 /*Posicion navbar */
 #header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -212,6 +210,35 @@ h2 {
 }
 
 .figureRegalos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.btn {
+  font-size: 1.5rem;
+}
+
+.divRegalos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.imagenRegalos {
   width: 30rem;
   height: 46rem;
 }
