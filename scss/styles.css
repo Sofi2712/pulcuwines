@@ -150,7 +150,7 @@ h2 {
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
   color: #A5476D;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 
@@ -218,6 +218,7 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
+  margin: 2rem;
 }
 
 .btn {
@@ -232,8 +233,9 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -242,6 +244,14 @@ h2 {
 .imagenRegalos {
   width: 30rem;
   height: 46rem;
+}
+
+.textoRegalos {
+  font-size: 1.5rem;
+  color: #844E5F;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
 }
 
 /*sectionFotosIndex*/
@@ -351,11 +361,13 @@ h2 {
           flex-flow: column nowrap;
   width: 100%;
   height: 100%;
+  font-size: 2rem;
 }
 
 .imagenHistoria {
   margin-left: 5rem;
   margin-top: 2.5rem;
+  border-radius: 5%;
 }
 
 .fotosregalos {
@@ -366,6 +378,10 @@ h2 {
   font-size: 1.7rem;
   width: 100%;
   height: 100%;
+}
+
+.formularioInput {
+  width: 32rem;
 }
 
 .fotocontacto {
