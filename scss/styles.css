@@ -128,7 +128,7 @@ h2 {
 
 .bienvenidos_titulo {
   color: #844E5F;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 
@@ -138,9 +138,16 @@ h2 {
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
   color: #A5476D;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-style: italic;
   font-weight: bold;
+}
+
+.textoIndex {
+  font-size: 2rem;
+  color: #844E5F;
+  text-align: center;
+  font-style: italic;
 }
 
 /*Formatos paginas*/
@@ -285,12 +292,17 @@ h2 {
 
 /*formatolistasproducto*/
 .figureListas {
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin: 2rem;
   padding: 3rem;
+}
+
+.figureListas img {
+  width: 40%;
+  height: 40%;
 }
 
 .footer {
@@ -316,6 +328,13 @@ h2 {
 .submenu {
   position: absolute;
   display: none;
+}
+
+.btn-secondary {
+  background-color: transparent !important;
+  color: rgba(0, 0, 0, 0.55);
+  border: none;
+  font-weight: bold;
 }
 
 .submenu li {
@@ -399,49 +418,13 @@ h2 {
   margin: 5rem;
 }
 
-/* Estructura GRID */
-/*.contenedor {
-    display: grid;
-    grid-template-columns: repeat(1fr);
-    grid-template-rows: 1fr 3.1fr 0.5fr;
-    grid-template-areas: 
-    "navegacion navegacion"
-    "main main"
-    "footer footer";
-}
-
-
-header {grid-area: navegacion;}
-
-main {grid-area: main;}
-
-footer {grid-area: footer;} */
 @media only screen and (max-width: 1200px) {
-  /*.contenedor {
-        display: grid;
-        grid-template-columns: repeat(1fr);
-        grid-template-rows: 0.5fr 3fr 0.5fr;
-        grid-template-areas: 
-        "navegacion navegacion"
-        "main main"
-        "footer footer";
-        }
-        */
   .navegacion li {
     font-size: 2rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  /*.contenedor {
-        display: grid;
-        grid-template-columns: repeat(1fr);
-        grid-template-rows: 0.5fr 2fr 0.5fr;
-        grid-template-areas: 
-        "navegacion navegacion"
-        "main main"
-        "footer footer";
-    } */
   .navegacion li {
     font-size: 1.7rem;
   }
@@ -451,24 +434,34 @@ footer {grid-area: footer;} */
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .figureListas {
+    padding: 0;
+    margin: 1rem;
+  }
+  .figureListas img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media only screen and (max-width: 320px) {
-  /*.contenedor {
-    display: grid;
-    grid-template-columns: repeat(1fr);
-    grid-template-rows: 2.3fr 5fr 1.7fr;
-    grid-template-areas: 
-    "navegacion"
-    "main"
-    "footer";
-    }
-    */
+  #header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .navegacion li {
     font-size: 2rem;
   }
   .navbar li {
     display: block;
+  }
+  .navbar-nav {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #navDropdown {
+    text-align: center;
   }
   .section {
     -webkit-box-orient: vertical;
@@ -510,24 +503,34 @@ footer {grid-area: footer;} */
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .figureListas {
+    padding: 0;
+    margin: 1rem;
+  }
+  .figureListas img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media only screen and (max-width: 425px) {
-  /*.contenedor {
-    display: grid;
-    grid-template-columns: repeat(1fr);
-    grid-template-rows: 2.3fr 5fr 1.7fr;
-    grid-template-areas: 
-    "navegacion"
-    "main"
-    "footer";
-    }
-    */
+  #header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .navegacion li {
     font-size: 2rem;
   }
   .navbar li {
     display: block;
+  }
+  .navbar-nav {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #navDropdown {
+    text-align: center;
   }
   .section {
     -webkit-box-orient: vertical;
@@ -572,11 +575,23 @@ footer {grid-area: footer;} */
 }
 
 @media only screen and (max-width: 590px) {
+  #header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .navegacion li {
     font-size: 2rem;
   }
   .navbar li {
     display: block;
+  }
+  .navbar-nav {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #navDropdown {
+    text-align: center;
   }
   .section {
     -webkit-box-orient: vertical;
